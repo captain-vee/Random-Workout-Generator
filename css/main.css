@@ -1,0 +1,109 @@
+/** Colors**/
+/*#1F4e5f blue (table color)
+#000505 black
+#5d5d81 dark grey
+#266DD3 blue
+#fefcfd white*/
+
+
+/*** General Styles***/
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: light;
+  box-sizing:border-box;
+}
+
+h1,
+h2,
+h3 {
+  text-align:center;
+}
+
+.container {
+  padding: 15px;
+  padding-bottom: 15%;
+
+}
+
+body {
+  margin:0px;
+  color: #000505;
+}
+
+/*Hero Section Styles */
+
+.hero {
+  width:100%;
+  height:800px;
+  margin-top:0px;
+  background-size:cover;
+  background-image: url("../img/random.workout.generator.hero.jpg");
+  background-position: center top;
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+.name {
+  color: #fefcfd;
+  font-size:48px;
+  position:absolute;
+  top:50%;
+  margin-left: auto;
+  margin-right:auto;
+  right:0;
+  left:0;
+  text-align:center;
+}
+
+
+/**Workout Panel Styles**/
+.workout-panel {
+ text-align:center;
+ background-color: #1f4e5f;
+ color:#fefcfd;
+ margin: 15px auto;
+ border-radius:5px;
+ padding:10px;
+ }
+
+.workout-panel input {
+  border: none;
+  box-shadow: inset 0px 0px 1px #000505;
+  text-align: center;
+  margin: 5px;
+}
+
+input[type='submit'] {
+  background-color:#fefcfd;
+  color: #1f4e5f;
+  border-radius:5px;
+  padding: 10px;
+}
+
+input[type='submit']:hover {
+  background-color:#1f4e5f;
+  color:#fefcfd;
+  border: solid 2px #fefcfd;
+}
+
+
+
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 980px){ /*Hides large screen table on mobile */
+
+.large {
+  display:none;
+}
+
+}
+
+@media screen and (min-width: 981px) { /*Hides mobile screen table on large devices */
+  .mobile {
+    display:none;
+      }
+}
